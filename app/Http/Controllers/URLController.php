@@ -22,8 +22,6 @@ class URLController extends Controller
 
         $shortened = $this->shortenedURLRepository->create($request->input('url'));
 
-        sleep(3);
-
         return response()->json([
             'shortened' => route('redirect', ['hash' => $shortened->hash])
         ]);

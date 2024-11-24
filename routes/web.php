@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\URLController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\URL;
 
 require __DIR__.'/auth.php';
 
@@ -16,7 +17,11 @@ require __DIR__.'/auth.php';
 |
 */
 
-Route::inertia('/', 'Home/Index')->name('home');
+Route::inertia('/', 'Home/Index', [
+    "routes" => [
+        "api-shorten" => URL::to('/api/shorten')
+    ]
+])->name('home');
 
 Route::post('/api/shorten', [URLController::class, 'shorten'])->name('shorten');
 

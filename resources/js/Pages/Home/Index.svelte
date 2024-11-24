@@ -4,6 +4,8 @@
     import Layout from '../../Layout/Main/Index.svelte';
     import Input from "./Input.svelte";
 
+    export let routes;
+
     let shortening = false;
     let shortenedUrl;
 
@@ -17,7 +19,7 @@
 
         let json;
         try {
-            json = await fetch('/api/shorten', {
+            json = await fetch(routes['api-shorten'], {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
