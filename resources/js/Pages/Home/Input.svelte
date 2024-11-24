@@ -27,7 +27,7 @@
         display: flex;
         align-items: stretch;
 
-        width: 400px;
+        width: min(400px, calc(100% - 1rem));
 
         border: 1px solid #310000;
         border-radius: 50rem;
@@ -45,6 +45,7 @@
         all: unset;
         flex-grow: 1;
         padding: 0 1rem;
+        width: 100%;
     }
 
     .button-wrapper {
