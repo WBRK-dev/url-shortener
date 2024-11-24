@@ -1,0 +1,6 @@
+composer install &&
+npm install &&
+npm run build &&
+php artisan migrate --force &&
+chmod -R 0777 storage &&
+php artisan route:clear
