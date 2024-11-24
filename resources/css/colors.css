@@ -1,0 +1,24 @@
+body {
+
+    --app-highlight: #ff0000;
+
+    --body-bg: #000000;
+    --body-bg-rgb: 0, 0, 0;
+    --body-color: #fff;
+    --body-hover-bg: #5c2b2b;
+
+    --primary-bg: #0000ff;
+    --primary-hover-bg: #0000df;
+    --primary-color: #fff;
+
+    --secondary-bg: #777777;
+    --secondary-hover-bg: #646464;
+    --secondary-color: #000000;
+
+    --success-bg: #00ff00;
+    --success-color: #000;
+
+    --danger-bg: #ff0000;
+    --danger-color: #fff;
+
+}
